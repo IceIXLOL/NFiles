@@ -57,24 +57,12 @@ local Global = getgenv and getgenv() or _G
 					Selection.FillColor = Color3.fromHSV(i,1,1)
 					Selection.OutlineColor = Color3.fromHSV(i,1,1)
 					Part.Transparency = 0
-					if isnetworkowner(Part) then Selection.Enabled = true else Selection.Enabled = false end
+					if isnetworkowner(Part) then Selection.Enabled = false else Selection.Enabled = false end
 					task.wait()
 				end
 			end
 		end)
 		Selection.Parent = Character
-	end
-	
-	do -- Settings
-		Global.Fling = Character.Humanoid.RigType == Enum.HumanoidRigType.R15 and 'LowerTorso' or Global.Reanimation == "PermaDeath" and 'HumanoidRootPart' or 'Right Arm'
-		Global.ShowReal = true
-		Global.GodMode = Global.Reanimation == 'PermaDeath' and true or false
-		Global.Velocity = -35
-		Global.Collisions = true
-		Global.AntiSleep = true
-		Global.MovementVelocity = false
-		Global.ArtificialHeartBeat = true
-		Global.EnableSpin = true
 	end
 	
 	do -- idk what the fuck this code is so im just gonna include it
