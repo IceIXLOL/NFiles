@@ -16,34 +16,6 @@ local Global = getgenv and getgenv() or _G
 	Mouse.Button1Down:Connect(function() MouseDown=true end)
 	Mouse.Button1Up:Connect(function() MouseDown=false end)
 	
-	local SplitTorsoHats = {
-		{"19999406",CFrame.Angles(math.rad(90),0,0)},
-		{"26400954",CFrame.Angles(math.rad(90),0,0)},
-		{"81504106",CFrame.Angles(math.rad(90),0,0)},
-		{"20367587",CFrame.Angles(math.rad(90),0,0)},
-		{"15730704",CFrame.Angles(math.rad(90),0,0)},
-		{"6858317867",CFrame.Angles(math.rad(90),0,0)},
-		{"6858318826",CFrame.Angles(math.rad(90),0,0)},
-		{"6926051356",CFrame.Angles(math.rad(90),0,0)},
-		{"45915003",CFrame.Angles(math.rad(90),0,0)},
-		{"44106323",CFrame.Angles(math.rad(90),0,0)},
-		{"376188163",CFrame.Angles(math.rad(90),0,0)},
-		{"417448095",CFrame.Angles(math.rad(90),0,0)},
-		{"47991609",CFrame.Angles(math.rad(90),0,0)},
-		{"3210183293",CFrame.Angles(math.rad(90),0,0)},
-		{"21778516",CFrame.Angles(math.rad(90),0,0)},
-		{"19999406",CFrame.Angles(math.rad(90),0,0)},
-		{"19999406",CFrame.Angles(math.rad(90),0,0)},
-		{"7287236788",CFrame.Angles(0,0,0)},
-		{"31740496",CFrame.Angles(0,0,0)},
-		{"3612040655",CFrame.Angles(0,0,0)},
-		{"30303412",CFrame.Angles(0,0,0)},
-		{"4802604574",CFrame.Angles(0,0,0)},
-		{"7250556324",CFrame.Angles(0,0,0)},
-		{"7402858015",CFrame.Angles(0,0,0)},
-		{"14456185",CFrame.Angles(0,0,0)},
-	}
-	
 	
 	do -- Settings
 		Global.Fling = Character.Humanoid.RigType == Enum.HumanoidRigType.R15 and 'LowerTorso' or Global.Reanimation == "PermaDeath" and 'HumanoidRootPart' or 'Right Arm'
