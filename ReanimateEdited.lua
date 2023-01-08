@@ -45,26 +45,6 @@ local Global = getgenv and getgenv() or _G
 	}
 	
 	
-	local function RainbowSelection(Part)
-		local Selection = Instance.new("Highlight")
-		Selection.Name = "Padero Pride Month Special"
-		Selection.Adornee = Part
-		Selection.FillTransparency = 0.7
-		Selection.DepthMode = 0
-		task.spawn(function()
-			while Character do
-				for i = 0,1,0.004 do
-					Selection.FillColor = Color3.fromHSV(i,1,1)
-					Selection.OutlineColor = Color3.fromHSV(i,1,1)
-					Part.Transparency = 0
-					if isnetworkowner(Part) then Selection.Enabled = true else Selection.Enabled = false end
-					task.wait()
-				end
-			end
-		end)
-		Selection.Parent = Character
-	end
-	
 	do -- Settings
 		Global.Fling = Character.Humanoid.RigType == Enum.HumanoidRigType.R15 and 'LowerTorso' or Global.Reanimation == "PermaDeath" and 'HumanoidRootPart' or 'Right Arm'
 		Global.ShowReal = true
