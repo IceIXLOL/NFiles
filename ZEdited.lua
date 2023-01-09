@@ -614,7 +614,7 @@ do -- [[ Create Dictionaries ]]
 					elseif v.Name == "UpperTorso" then
 						BaseParts[v] = {FakeRig:FindFirstChild("Torso"),Global.R15AdjustOffsets and CFrame.new(0,0.2*(RealRig.UpperTorso.Size.Y/1.6) or CFrame.new(0,0.2,0),0)}
 					elseif v.Name == "LowerTorso" then
-						BaseParts[v] = {FakeRig:FindFirstChild("Torso"),Global.R15AdjustOffsets and CFrame.new(0,-0.1*(RealRig.LowerTorso.Size.Y/0.4) or CFrame.new(0,-0.1,0),0)}
+						BaseParts[v] = {FakeRig:FindFirstChild("Torso"),Global.R15AdjustOffsets and CFrame.new(0,-0.8*(RealRig.LowerTorso.Size.Y/0.4) or CFrame.new(0,-0.8,0),0)}
 					elseif v.Name == "HumanoidRootPart" then
 						BaseParts[v] = {FakeRig:FindFirstChild("HumanoidRootPart"),CFrame.new()}
 					elseif v.Name == "Head" then
