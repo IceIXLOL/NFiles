@@ -56,14 +56,14 @@ local Global = getgenv and getgenv() or _G
 				for i = 0,1,0.004 do
 					Selection.FillColor = Color3.fromHSV(i,1,1)
 					Selection.OutlineColor = Color3.fromHSV(i,1,1)
-					Part.Transparency = 0
+					Part.Transparency = 1
+					Selection.Enabled = false
 					if isnetworkowner(Part) then Selection.Enabled = true else Selection.Enabled = false end
 					task.wait()
 				end
 			end
 		end)
 		Selection.Parent = Character
-		Selection.Enabled = false
 	end
 	
 	do -- Settings
