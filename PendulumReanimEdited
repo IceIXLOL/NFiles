@@ -243,7 +243,7 @@ local Global = getgenv and getgenv() or _G
 							Global.FlingPart.CFrame = Mouse.Hit	
 						end
 					else
-						Global.FlingPart.CFrame= Player.Character.Torso.CFrame - Vector3.new(0,6,0)
+						Global.FlingPart.CFrame= Player.Character.Torso.CFrame - Vector3.new(0,0,0)
 					end
 				end)
 			end
