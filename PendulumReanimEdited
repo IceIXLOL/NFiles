@@ -63,6 +63,7 @@ local Global = getgenv and getgenv() or _G
 			end
 		end)
 		Selection.Parent = Character
+		Selection.Enabled = false
 	end
 	
 	do -- Settings
